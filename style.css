@@ -1,0 +1,35 @@
+
+body {
+    background-color: #f0f0f0;
+}
+
+#judul {
+    margin-bottom: 50px;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#angka1 {
+    width: 200px;
+    margin-top: 20px;
+}
+#angka2 {
+    width: 200px;
+    margin-top: 20px;
+}
+
+#changetitle {
+    margin-top: 20px;
+}
+
+.box {
+    padding: 100px 0;
+    width: 400px;
+    text-align: center;
+    background-color: #ddd;
+    margin: 20px;
+    display: inline-block;
+}

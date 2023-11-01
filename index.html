@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar VueJS</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1 class="display-1" id="judul" >Aplikasi Kalkulator Menggunakan Vue.Js</h1>
+    </center>
+    <div id="app">
+        <h1 class="display-5">Masukkan Angka 1</h1>
+        <input v-model="x" id="angka1" class="form-control form-control-sm" type="text" placeholder="Input here" aria-label=".form-control-sm example">
+        <h1 class="display-5">Masukkan Angka 2</h1>
+        <input v-model="y" id="angka2" class="form-control form-control-sm" type="text" placeholder="Input here" aria-label=".form-control-sm example">
+        <button id="tambah" type="button" class="btn btn-primary" @click="tambah()">+</button>
+        <button id="kurang" type="button" class="btn btn-primary" @click="kurang()">-</button>
+        <button id="kali" type="button" class="btn btn-primary" @click="kali()">x</button>
+        <button id="bagi" type="button" class="btn btn-primary" @click="bagi()">/</button>
+        <h1 class="display-5">{{hasil}}</h1>
+    </div>    
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
